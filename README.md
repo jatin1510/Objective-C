@@ -1,9 +1,21 @@
-# Xcode Snippets
+#### C Basic Syntax Snippet through c.json as shown as below
+#### This includes 4 important library for C language 
+#### You have to write code in c.json like this 
 
-Just a few code snippets I have in my Xcode arsenal. In [dotfiles](http://dotfiles.org/) fashion, I thought it'd be cool to put these out in the ether.
-
-## Using Snippets
-
-In Xcode 4, open a workspace and toggle the right sidebar to be visible. On the bottom, there is a panel with four icons in the header. Click on the `{ }` icon to open the Code Snippets Library.
-
-Now copy-paste the code from one of these snippets, highlight the code block you just pasted and drag it to the Code Snippet panel. Make sure to match the suggested platform, language, and completion scope. The completion shortcut corresponds to the filename of the code snippet.
+{
+    "main_syntax": {
+        "prefix": "syntax",
+        "body": [
+            "#include<stdio.h>",
+            "#include<string.h>",
+            "#include<stdlib.h>",
+            "#include<time.h>\n",
+            "int main()",
+            "{"
+            "\t$1\n",
+            "\treturn 0;",
+            "}"
+        ],
+        "description": "Simple syntax of c programming",
+    },
+}    
